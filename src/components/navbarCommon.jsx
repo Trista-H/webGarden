@@ -5,7 +5,7 @@ function navbarCommon() {
     <>
       {[ 'md'].map((expand) => (
         <Navbar key={expand} expand={expand} className="navbarCommon">
-          <Container fluid>
+          <Container fluid className="align-end">
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}

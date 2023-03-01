@@ -1,22 +1,25 @@
 header {
-  background-color: #F1B8E5;
+  border-bottom: 5px solid #F1B8E5;
 }
-header .container {
-  background-color: #fff;
+.container-fluid .container {
   padding-bottom: .5em;
   padding-top: .5em;
+}
+
+header h1 {
+  font-size: 1.8em;
+  line-height: 1;
 }
 header .container div:nth-child(1) {
   align-items: center;
   color: #8D8D8D;
   display: flex;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.3em;
   font-weight: lighter;
 }
 header .container div:nth-child(1) img {
-  margin-left: 1em;
   margin-right: .3em;
+  vertical-align: bottom;
 }
 
 header .container div:nth-child(2) {
@@ -28,16 +31,14 @@ header .container div:nth-child(2) span {
   border-radius: 10em;
   display: inline-block;
   font-size: .9em;
-  margin-right: 1em;
   padding: .2em .5em;
   text-align: right;
 }
 header .container div:nth-child(2) span span {
-  margin-right: 0;
   padding: 0;
 }
 header .container div:nth-child(2) img {
-  margin-right: 1em;
+  margin-right: .5em;
   vertical-align: middle;
 }
 .navbarCommon.navbar {
@@ -59,4 +60,85 @@ header .container div:nth-child(2) img {
 .navbarCommon a:hover {
   background-color: #72DDF1;
   color: #fff!important;
+}
+
+.overlay-img {
+  border-bottom: 5px solid #F1B8E5;
+  border-top: 5px solid #F7DB91;
+  margin-bottom: 1em;
+  position: relative;
+}
+.overlay-img h2 {
+  color: #fff;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 100%;
+}
+main .card {
+  border: 0;
+  margin-bottom: 1em;
+}
+main .card-body {
+  padding: 0;
+}
+main .card .h5 {
+  color: #079CC4;
+  font-size: 1em;
+  font-weight: normal;
+  padding-top: .5em;
+}
+main .card .card-text {
+  color: #000;
+  font-size: .8em;
+}
+.sectionHome {
+  background-color: #079CC4;
+  color: #fff;
+}
+.sectionHome a {
+  color: #fff;
+}
+.sectionHome ul {
+  margin: 0;
+}
+.sectionHome li {
+  margin-bottom: 1em;
+}
+footer {
+  background-color: #F1B8E5;
+}
+@media all and (max-width: 430px) {
+  header h1 {
+    font-size: 1.2em;
+    vertical-align: bottom;
+  }
+  header h1 img {
+    height: 1.2em;
+    width: auto;
+  }
+}
+@media all and (max-width: 767px) {
+  .align-end.container-fluid {
+    justify-content: flex-end!important;
+    margin: .5em;
+    max-width: 540px;
+    padding-right: 1em;
+  }
+  button.navbar-toggler.collapsed {
+    background-color: #fff6b9;
+    border: 0;
+  }
+  button.navbar-toggler.collapsed:focus, 
+  button.navbar-toggler.collapsed:focus-visible {
+    border: 0;
+    box-shadow: none;
+    outline: none;
+  }
+}
+@media all and (max-width: 1119px) {
+  .navbarCommon.navbar-expand-md .navbar-nav .nav-link {
+    padding-left: 1.3em;
+    padding-right: 1.3em;
+  }
 }
